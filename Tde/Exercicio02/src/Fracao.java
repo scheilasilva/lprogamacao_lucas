@@ -6,18 +6,13 @@ public class Fracao {
         this.numerador = numerador;
         this.denominador = denominador;
     }
-
-    public int getNumerador() {
-        return numerador;
-    }
-
-    public int getDenominador() {
-        return denominador;
-    }
-
-    public Fracao multiplicar(Fracao outra) {
+    public Fracao multiplicar(Fracao outra ) {
         int novoNumerador = this.numerador * outra.numerador;
         int novoDenominador = this.denominador * outra.denominador;
-        return new Fracao(novoNumerador, novoDenominador);
+        return new  Fracao(novoNumerador, novoDenominador);
+    }
+
+    public String toString() {
+        return numerador + "/" + denominador;
     }
 }
